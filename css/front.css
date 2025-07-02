@@ -1,0 +1,83 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/hyyousi1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+
+.menu-icon-wrapper {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 100;
+}
+
+#menu-icon {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff0f5;
+  cursor: pointer;
+}
+
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 100px;
+  height: auto;
+}
+
+.app-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  color: #b47257;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bubble {
+  width: 80%;
+  max-width: 300px;
+  padding: 15px;
+  background-color: #fff0f5;
+  border: 2px solid #f4c2c2;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-top-color: #fff0f5;
+}

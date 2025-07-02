@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>設定</title>
+  <link rel="stylesheet" href="css/setting.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="menu-icon-wrapper">
+    <img id="menu-icon" src="img/pureredpanda.jpg" alt="menu" />
+  </div>
+
+  <main>
+    <h1>Setting</h1>
+    <form id="settings-form">
+      <label>Name<input type="text" id="name" /></label>
+      <label>Birth Day<input type="date" id="birthday" required /></label>
+      <label>Font
+        <select id="font">
+          <option value="Pacifico">Pacifico</option>
+          <option value="Dancing Script">Dancing Script</option>
+          <option value="Zen Maru Gothic">Zen Maru Gothic</option>
+        </select>
+      </label>
+      <label>Icon<input type="file" id="icon-upload" accept="image/*" /></label>
+      <img id="icon-preview" src="img/pureredpanda.jpg" alt="preview" />
+      <label>color<input type="color" id="color-picker" value="#FAEDFA" /></label>
+      <div class="buttons">
+        <button type="submit">保存</button>
+        <button type="button" id="reset-btn">リセット</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="js/header-icon.js"></script>
+  <script src="js/setting.js"></script>
+</body>
+</html>

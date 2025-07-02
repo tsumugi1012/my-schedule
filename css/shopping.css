@@ -1,0 +1,79 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Ribeye Marrow', cursive;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-icon-wrapper {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 100;
+}
+
+#menu-icon {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff0f5;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-size: 120px;
+  color: #d63384;
+  margin-top: 80px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping-list {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  max-width: 700px;
+}
+
+.shopping-list li {
+  background: #ffffff;
+  border: 1px dotted #ccc;
+  margin: 40px 0;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drag-handle {
+  cursor: move;
+}
+
+.dotted-input {
+  flex-grow: 1;
+  border: none;
+  border-bottom: 1px dotted #aaa;
+  background: transparent;
+  font-size: 36px;
+  outline: none;
+}
+
+.button-area {
+  margin: 20px 0;
+}
