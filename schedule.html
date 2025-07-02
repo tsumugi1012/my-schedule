@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>タイムスケジュール</title>
+  <link rel="stylesheet" href="css/schedule.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <script defer src="js/schedule.js"></script>
+  <script defer src="js/header-icon.js"></script>
+</head>
+<body style="background-image: url('img/hyyousi1.jpeg'); background-size: cover; background-position: center; font-family: 'Yusei Magic', sans-serif;">
+  <div class="menu-icon-wrapper">
+    <img id="menu-icon" src="img/pureredpanda.jpg" alt="menu">
+  </div>
+
+  <div class="top-bar">
+    <button id="prevDay">&#x2039;</button>
+    <h1 id="dateLabel">2025年7月1日</h1>
+    <button id="nextDay">&#x203A;</button>
+  </div>
+
+  <div class="schedule-container" id="scheduleContainer">
+    <!-- タイムスロットがJavaScriptで生成される -->
+  </div>
+
+  <div class="sleep-section">
+    <h2>睡眠記録</h2>
+    <label>起床時間: <input type="time" id="wakeTime"></label>
+    <label>就寝時間: <input type="time" id="sleepTime"></label>
+  </div>
+
+  <div class="back-button">
+    <a href="index.html">← カレンダーに戻る</a>
+  </div>
+</body>
+</html>

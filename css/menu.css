@@ -1,0 +1,74 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.menu-icon-wrapper {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 100;
+}
+
+#menu-icon {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff0f5;
+  cursor: pointer;
+}
+
+.menu-container {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.menu-container h1 {
+  font-size: 120px;
+  color: #E08B63;
+  margin-bottom: 80px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* ← 2列に固定 */
+  gap: 40px 40px;                         /* 行・列の間隔 */
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-items: center;                 /* ボタン中央寄せ */
+}
+
+.menu-item {
+  display: flex;                        /* ← ここだけ変える！ */
+  align-items: center;                 /* 縦方向の中央揃え */
+  justify-content: center; 
+  width: 300px;                          /* ボタンの幅 */
+  height: 200px;                         /* ボタンの高さ */
+  padding: 20px;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: #E08B63;
+  margin-top: 20px;
+  background-color: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px #999;
+  transition: 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #f29abf;
+  transform: translateY(-3px);
+}

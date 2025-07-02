@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>カレンダー</title>
+  <link rel="stylesheet" href="css/calendar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <script defer src="js/calendar.js"></script>
+  <script defer src="js/header-icon.js"></script>
+</head>
+<body style="background-image: url('img/hyousi3.jpeg'); background-size: cover; background-position: center; font-family: 'Yusei Magic', sans-serif;">
+  <div class="menu-icon-wrapper">
+    <img id="menu-icon" src="img/pureredpanda.jpg" alt="menu">
+  </div>
+
+  <h1 id="monthLabel" class="month-label">2025年7月</h1>
+  <div class="calendar-controls">
+    <button id="prevMonth">&#x2039;</button>
+    <button id="nextMonth">&#x203A;</button>
+  </div>
+
+  <table class="calendar-table">
+    <thead>
+      <tr>
+        <th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th>
+      </tr>
+    </thead>
+    <tbody id="calendarBody"></tbody>
+  </table>
+
+  <div class="bottom-section">
+    <div>
+      <h2>スケジュール</h2>
+      <textarea id="scheduleInput" rows="3" placeholder="予定を入力"></textarea>
+    </div>
+    <div>
+      <h2>ダイアリー</h2>
+      <textarea id="diaryInput" rows="3" placeholder="日記を書く"></textarea>
+      <div id="moodIcons">
+        <img src="img/happy.PNG" alt="happy" class="mood-icon" data-mood="happy">
+        <img src="img/sad.png" alt="sad" class="mood-icon" data-mood="sad">
+        <img src="img/angry.png" alt="angry" class="mood-icon" data-mood="angry">
+        <img src="img/verysad.PNG" alt="neutral" class="mood-icon" data-mood="neutral">
+        <img src="img/komatteru.PNG" alt="excited" class="mood-icon" data-mood="excited">
+      </div>
+    </div>
+    <div>
+      <h2>お金の記録</h2>
+      <label>予算: <input type="number" id="budgetInput">円</label><br>
+      <label>支出: <input type="number" id="expenseInput">円</label><br>
+      <label>収入: <input type="number" id="incomeInput">円</label><br>
+      <div id="balanceDisplay"></div>
+    </div>
+  </div>
+</body>
+</html>

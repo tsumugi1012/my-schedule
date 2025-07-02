@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>サマリー</title>
+  <link rel="stylesheet" href="css/summary.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <script defer src="js/summary.js"></script>
+  <script defer src="js/header-icon.js"></script>
+</head>
+<body style="background-image: url('img/hyousi2.jpeg'); background-size: cover; background-position: center; font-family: 'Yusei Magic', sans-serif;">
+  <div class="menu-icon-wrapper">
+    <img id="menu-icon" src="img/pureredpanda.jpg" alt="menu">
+  </div>
+
+  <div class="toggle-buttons">
+    <button id="weeklyBtn" class="active">週間</button>
+    <button id="monthlyBtn">月間</button>
+  </div>
+
+  <div class="period-controls">
+    <button id="prevPeriod">&#x2039;</button>
+    <h1 id="periodLabel">期間</h1>
+    <button id="nextPeriod">&#x203A;</button>
+  </div>
+
+  <div class="summary-section">
+    <h2>🛌 睡眠サマリー</h2>
+    <p>平均起床時間：<span id="avgWake"></span></p>
+    <p>平均睡眠時間：<span id="avgSleep"></span></p>
+  </div>
+
+  <div class="summary-section">
+    <div class="toggle-buttons-sub">
+      <button id="expenseWeekBtn" class="active">週間</button>
+      <button id="expenseMonthBtn">月間</button>
+    </div>
+    <h2>💰 お金のサマリー</h2>
+    <p>支出合計：<span id="totalExpense"></span>円</p>
+    <p>収入合計：<span id="totalIncome"></span>円</p>
+    <p>1日あたり平均支出：<span id="avgExpensePerDay"></span>円</p>
+  </div>
+</body>
+</html>
